@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function AuthForm({ fields, onSubmit, buttonLabel }) {
+function AuthForm({ fields, onSubmit, buttonLabel, formTitle }) {
     const [formData, setFormData] = useState(
         fields.reduce((acc, field) => ({ ...acc, [field.name]: '' }), {})
     );
@@ -18,6 +18,7 @@ function AuthForm({ fields, onSubmit, buttonLabel }) {
 
     return (
         <form className="auth-form" onSubmit={handleSubmit}>
+             <h2 style={{ textAlign: 'center', marginBottom: '18px' }}>{formTitle}</h2>
             {fields.map(field => (
                 <div key={field.name}>
                     <label htmlFor={field.name}>{field.label}:</label>

@@ -29,9 +29,8 @@
     }
 
    return (
-     <div>
-       <h1>Login Page</h1>
-       <AuthForm fields={loginFields} onSubmit={handleSubmit} buttonLabel="Log In" />
+     <div className="auth-container">
+       <AuthForm fields={loginFields} onSubmit={handleSubmit} buttonLabel="Log In" formTitle="Log In" />
      </div>
    );
  }

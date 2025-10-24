@@ -10,15 +10,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar/>}>
-          <Route index element={<Landingpage/>}/>
-        </Route>
+        <Route path="/" element={<Landingpage/>}/>
 
         <Route path="signup" element={<Register/>}/>
         
         <Route path="login" element={<Login/>}/>
         
-        <Route path="/home/*" element ={<Navbar/>}>
+        <Route path="/home/:userId" element ={<Navbar/>}>
           <Route index element={<Home/>}/>
         </Route>
       </Routes>

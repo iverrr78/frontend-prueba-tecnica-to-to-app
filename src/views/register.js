@@ -1,8 +1,10 @@
  import { AuthForm } from "../components/authform.js";
  import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Register() {
+    const [error, setError] = useState('');
     const navigate = useNavigate();
     const signupFields = [
     { name: 'username', label: 'Username', type: 'text' },
@@ -17,16 +19,18 @@ function Register() {
                 email: data.email,
                 password: data.password
             });
-            console.log(response);
+            setError('');
             navigate('/');
         } catch (error) {
-            console.error('Registration failed:', error);
+            setError(error.response?.data?.message ||'Registration failed. Please try again.');
         }
     }
   return (
-    <div>
-       <h1>Signup Page</h1>
-       <AuthForm fields={signupFields} onSubmit={handleSubmit} buttonLabel="Log In" />
+    <div className="auth-container">
+       <div>
+         <AuthForm fields={signupFields} onSubmit={handleSubmit} buttonLabel="Sign Up" formTitle="Sign Up" />
+         {error && <p style={{ color: 'red', marginTop: '10px', textAlign: 'center' }}>{error}</p>}
+       </div>
     </div>
   );
 }
