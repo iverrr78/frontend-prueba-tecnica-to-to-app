@@ -100,6 +100,25 @@ The application is fully responsive and optimized for various screen sizes:
 - Reduced font sizes for better readability
 - Stacked buttons for easier interaction
 
+## Design Decisions
+
+### Technology Stack
+The technology choices for this project were made based on familiarity and efficiency:
+
+- **React**: Chosen for the frontend because of familiarity with component-based architecture and its ecosystem.
+- **Project Structure**: The folder organization (separating components and views) was designed based on previous experience with React projects, promoting maintainability and scalability.
+- **Libraries**: 
+  - **Axios** - Familiar HTTP client with clean syntax for API calls
+  - **React Router** - Standard routing solution for React applications
+  - **JWT Decode** - Lightweight library for handling authentication tokens
+
+This approach allowed for rapid development while maintaining code quality and following best practices.
+
+### Development Time
+**Approximate development time: 4 hours**
+
+This included planning, implementation of all features, styling, responsive design, and documentation.
+
 ## Usage
 
 1. **Landing Page**: Welcome screen with options to sign up or log in
@@ -241,6 +260,25 @@ La aplicación es completamente responsiva y optimizada para varios tamaños de 
 - Espaciado aún más optimizado
 - Tamaños de fuente reducidos para mejor legibilidad
 - Botones apilados para interacción más fácil
+
+## Decisiones de Diseño
+
+### Stack Tecnológico
+Las elecciones tecnológicas para este proyecto se realizaron basándose en familiaridad y eficiencia:
+
+- **React**: Elegido para el frontend por la familiaridad con la arquitectura basada en componentes y su ecosistema.
+- **Estructura del Proyecto**: La organización de carpetas (separando componentes y vistas) fue diseñada basándose en experiencia previa con proyectos React, promoviendo mantenibilidad y escalabilidad.
+- **Librerías**:
+  - **Axios** - Cliente HTTP familiar con sintaxis limpia para llamadas API
+  - **React Router** - Solución estándar de enrutamiento para aplicaciones React
+  - **JWT Decode** - Librería ligera para manejar tokens de autenticación
+
+Este enfoque permitió un desarrollo rápido manteniendo la calidad del código y siguiendo las mejores prácticas.
+
+### Tiempo de Desarrollo
+**Tiempo aproximado de desarrollo: 4 horas**
+
+Esto incluyó planificación, implementación de todas las funcionalidades, estilizado, diseño responsivo y documentación.
 
 ## Uso
 
