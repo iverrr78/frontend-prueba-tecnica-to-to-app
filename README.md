@@ -114,6 +114,13 @@ The technology choices for this project were made based on familiarity and effic
 
 This approach allowed for rapid development while maintaining code quality and following best practices.
 
+### Code Language
+All code, including comments, variable names, function names, and documentation within the code, is written in **English**. This decision was made because:
+- It's how I was taught at university
+- English is the industry standard for programming
+- It ensures better collaboration and code readability for international teams
+- It aligns with best practices in software development
+
 ### Development Time
 **Approximate development time: 4 hours**
 
@@ -274,6 +281,13 @@ Las elecciones tecnológicas para este proyecto se realizaron basándose en fami
   - **JWT Decode** - Librería ligera para manejar tokens de autenticación
 
 Este enfoque permitió un desarrollo rápido manteniendo la calidad del código y siguiendo las mejores prácticas.
+
+### Idioma del Código
+Todo el código, incluyendo comentarios, nombres de variables, nombres de funciones y documentación dentro del código, está escrito en **inglés**. Esta decisión se tomó porque:
+- Es como me enseñaron en la universidad
+- El inglés es el estándar de la industria para programación
+- Asegura mejor colaboración y legibilidad del código para equipos internacionales
+- Se alinea con las mejores prácticas en desarrollo de software
 
 ### Tiempo de Desarrollo
 **Tiempo aproximado de desarrollo: 4 horas**
