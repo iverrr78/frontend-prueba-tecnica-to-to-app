@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// Define the TaskForm component that handles task creation
 function TaskForm({ onCreate }) {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');

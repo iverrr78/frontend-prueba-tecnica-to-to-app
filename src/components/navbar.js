@@ -1,9 +1,10 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 
+// Define the Navbar component
 function Navbar() {
     const navigate = useNavigate();
-    //const token = localStorage.getItem('token');
 
+    // Handle user logout deleting token and redirecting to landing page
     const handleLogout = () => {
         localStorage.removeItem('token');
         navigate('/');

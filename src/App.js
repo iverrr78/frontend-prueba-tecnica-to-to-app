@@ -6,6 +6,7 @@ import { Register } from './views/register.js';
 import { Home } from './views/home.js';
 import './App.css';
 
+// Define the App component with routing
 function App() {
   return (
     <BrowserRouter>

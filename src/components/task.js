@@ -1,3 +1,5 @@
+
+// Define the Task component
 function Task({ title, description, status, onDelete, onChangeStatus }) {
     return (
         <div className="task-card">
@@ -10,9 +12,12 @@ function Task({ title, description, status, onDelete, onChangeStatus }) {
                 <button className="task-delete-btn" onClick={onDelete}>
                     Delete
                 </button>
-                <button className="task-toggle-btn" onClick={onChangeStatus}>
-                    {status === 'completed' ? 'Mark as Incomplete' : 'Mark as Completed'}
-                </button>
+                {/* Only show "Mark as Completed" button if task is not completed */}
+                {!status && (
+                    <button className="task-toggle-btn" onClick={onChangeStatus}>
+                        Mark as Completed
+                    </button>
+                )}
             </div>
         </div>
     );

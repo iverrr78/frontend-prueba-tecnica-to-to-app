@@ -1,11 +1,23 @@
 import { Navigate, useNavigate } from "react-router-dom";
+import { jwtDecode } from "jwt-decode";
 
+// Define the Landingpage component
 function Landingpage() {
   const navigate = useNavigate();
+  // Check if user is logged in
   const token = localStorage.getItem('token');
-    if (token) {
-        return <Navigate to="/home" replace />;
+  
+  // If logged in, redirect to home page
+  if (token) {
+    try {
+      const userId = jwtDecode(token).id;
+      return <Navigate to={`/home/${userId}`} replace />;
+    } catch (error) {
+      // If token is invalid, remove it and stay on landing page
+      localStorage.removeItem('token');
     }
+  }
+  
   return (
     <div className="landing-container">
       <div className="landing-content">
